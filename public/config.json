@@ -1,0 +1,84 @@
+{
+  "siteTitle": "Happy Birthday, Riya! 🎂",
+  "person": {
+    "name": "Riya",
+    "from": "Sagar"
+  },
+  "theme": {
+    "primaryColor": "#fb7185",
+    "secondaryColor": "#a855f7",
+    "accentColor": "#facc15",
+    "background": "linear-gradient(135deg, #fff1f2 0%, #fdf2ff 45%, #eef2ff 100%)"
+  },
+  "hero": {
+    "eyebrow": "A Very Special Day For",
+    "heading": "Happy Birthday, Riya!",
+    "subheading": "Today the whole world should celebrate the most amazing, kind, and beautiful person I know — because she's you. 🎉",
+    "image": "https://picsum.photos/id/1027/600/600",
+    "ctaText": "Scroll down for a surprise"
+  },
+  "sections": [
+    {
+      "id": "memories",
+      "type": "gallery",
+      "title": "Our Favorite Memories",
+      "subtitle": "Every picture tells a little piece of our story.",
+      "items": [
+        { "image": "https://picsum.photos/id/1011/500/600", "caption": "The trip we never stopped talking about" },
+        { "image": "https://picsum.photos/id/1012/500/600", "caption": "That night we danced until 2am" },
+        { "image": "https://picsum.photos/id/1013/500/600", "caption": "Your smile on a random Tuesday" },
+        { "image": "https://picsum.photos/id/1015/500/600", "caption": "Lost, but happy together" },
+        { "image": "https://picsum.photos/id/1016/500/600", "caption": "Coffee, laughter, repeat" },
+        { "image": "https://picsum.photos/id/1018/500/600", "caption": "Adventures waiting to happen" }
+      ]
+    },
+    {
+      "id": "reasons",
+      "type": "reasons",
+      "title": "Reasons I Love You",
+      "subtitle": "I could write a thousand pages, but here's a start...",
+      "items": [
+        { "icon": "💖", "text": "Your laugh that makes everything better" },
+        { "icon": "🌟", "text": "How you light up every room you walk into" },
+        { "icon": "🤗", "text": "The way you care for everyone around you" },
+        { "icon": "🎨", "text": "Your endless creativity and imagination" },
+        { "icon": "☕", "text": "Lazy mornings and late night talks with you" },
+        { "icon": "💪", "text": "How strong and brave you are, always" },
+        { "icon": "🎶", "text": "The way you sing (even when off-key)" },
+        { "icon": "🌈", "text": "Simply... you, being you" }
+      ]
+    },
+    {
+      "id": "letter",
+      "type": "message",
+      "title": "A Little Note For You",
+      "signature": "With all my love, Sagar 💌",
+      "body": "Dear Riya,\n\nOn this special day, I just want you to know how much you mean to me. Every moment with you feels like a gift, and watching you grow, smile, and shine inspires me every single day.\n\nMay this new year of your life be filled with laughter, adventure, and all the love you so freely give to others — finally coming back to you.\n\nHappy Birthday, beautiful. Here's to many more memories together."
+    },
+    {
+      "id": "wishes",
+      "type": "wishes",
+      "title": "Birthday Wishes From Everyone",
+      "subtitle": "Friends and family share their love for you",
+      "items": [
+        { "name": "Mom", "avatar": "https://picsum.photos/id/64/100/100", "message": "Happy Birthday my darling! Wishing you all the happiness in the world. We love you so much! ❤️" },
+        { "name": "Aman", "avatar": "https://picsum.photos/id/91/100/100", "message": "Happy bday! Let's celebrate this weekend, drinks on me 🍰🎉" },
+        { "name": "Priya", "avatar": "https://picsum.photos/id/65/100/100", "message": "To my favorite person — have the best day ever! You deserve all the love ✨" },
+        { "name": "Dad", "avatar": "https://picsum.photos/id/177/100/100", "message": "Proud of the woman you've become. Happy Birthday sweetheart! 🎂" }
+      ]
+    },
+    {
+      "id": "surprise",
+      "type": "surprise",
+      "title": "One Last Surprise...",
+      "subtitle": "Go on, you know you want to.",
+      "buttonText": "🎁 Click to Open Your Gift",
+      "revealHeading": "Surprise! 🎉",
+      "revealMessage": "I love you more than words can say. Thank you for being you. Here's to celebrating YOU today and always — Happy Birthday! 🥳💕",
+      "revealImage": "https://picsum.photos/id/1025/500/400"
+    }
+  ],
+  "footer": {
+    "text": "Made with ❤️ by Sagar, just for you."
+  }
+}
