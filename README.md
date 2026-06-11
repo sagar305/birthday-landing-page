@@ -19,9 +19,29 @@ All content lives in [`public/config.json`](./public/config.json). It is fetched
 | --- | --- |
 | `siteTitle` | Browser tab title |
 | `theme.background` | CSS `background` value for the whole page (gradient, color, etc.) |
+| `lock` | Optional romantic "enter your nickname" gate shown before the page (see below) |
 | `hero` | The full-screen intro section |
 | `sections` | An ordered array of content sections rendered below the hero |
 | `footer.text` | Small text shown at the very bottom |
+
+### Lock screen
+
+Set `lock.enabled` to `true` to require a fun "password" before the page is revealed — perfect for asking "what do you call me?" and only accepting the pet name she calls you.
+
+```json
+"lock": {
+  "enabled": true,
+  "emoji": "💌",
+  "question": "Before you come in... what do you call me? 🥺",
+  "subtitle": "Hint: it's the name only you use for me 💕",
+  "placeholder": "Type it here...",
+  "buttonText": "Unlock My Surprise 🔓",
+  "answers": ["pookie", "jaanu"],
+  "hint": "Try again, jaanu... think about what you whisper to me 😉"
+}
+```
+
+`answers` accepts multiple valid nicknames (case-insensitive, whitespace-trimmed). The hint appears after a wrong guess. Once unlocked, the page stays unlocked for the browser session (`sessionStorage`). Set `enabled` to `false` to skip the gate entirely.
 
 ### Hero
 

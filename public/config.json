@@ -10,6 +10,16 @@
     "accentColor": "#facc15",
     "background": "linear-gradient(135deg, #fff1f2 0%, #fdf2ff 45%, #eef2ff 100%)"
   },
+  "lock": {
+    "enabled": true,
+    "emoji": "💌",
+    "question": "Before you come in... what do you call me? 🥺",
+    "subtitle": "Hint: it's the name only you use for me 💕",
+    "placeholder": "Type it here...",
+    "buttonText": "Unlock My Surprise 🔓",
+    "answers": ["pookie"],
+    "hint": "Try again, jaanu... think about what you whisper to me 😉"
+  },
   "hero": {
     "eyebrow": "A Very Special Day For",
     "heading": "Happy Birthday, Riya!",
