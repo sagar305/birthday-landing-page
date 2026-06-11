@@ -49,6 +49,27 @@
       ]
     },
     {
+      "id": "timeline",
+      "type": "timeline",
+      "title": "Our Journey Through Time",
+      "subtitle": "A little walk down memory lane...",
+      "items": [
+        { "date": "2019", "image": "https://picsum.photos/id/1005/500/400", "caption": "The day we first met — and I knew you were special." },
+        { "date": "2021", "image": "https://picsum.photos/id/1003/500/400", "caption": "Our first big trip together. Best decision ever." },
+        { "date": "2023", "image": "https://picsum.photos/id/1024/500/400", "caption": "Celebrating every little win, side by side." },
+        { "date": "2025", "image": "https://picsum.photos/id/1035/500/400", "caption": "Still laughing, still us — just getting started." }
+      ]
+    },
+    {
+      "id": "puzzle",
+      "type": "puzzle",
+      "title": "How Much Do I Love You?",
+      "subtitle": "Watch closely...",
+      "image": "https://picsum.photos/id/1043/600/600",
+      "meterLabel": "Love-O-Meter",
+      "revealText": "Infinity ∞ and beyond!"
+    },
+    {
       "id": "letter",
       "type": "message",
       "title": "A Little Note For You",
@@ -66,6 +87,20 @@
         { "name": "Priya", "avatar": "https://picsum.photos/id/65/100/100", "message": "To my favorite person — have the best day ever! You deserve all the love ✨" },
         { "name": "Dad", "avatar": "https://picsum.photos/id/177/100/100", "message": "Proud of the woman you've become. Happy Birthday sweetheart! 🎂" }
       ]
+    },
+    {
+      "id": "voicenote",
+      "type": "voicenote",
+      "title": "A Little Something To Hear",
+      "subtitle": "Press play whenever you're ready 💌",
+      "audio": {
+        "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+        "label": "🎤 Voice note from Sagar"
+      },
+      "video": {
+        "url": "",
+        "label": "🎥 A video just for you"
+      }
     },
     {
       "id": "surprise",

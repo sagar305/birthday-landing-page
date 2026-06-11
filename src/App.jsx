@@ -8,6 +8,9 @@ import Reasons from './components/Reasons'
 import Message from './components/Message'
 import Wishes from './components/Wishes'
 import Surprise from './components/Surprise'
+import Timeline from './components/Timeline'
+import Puzzle from './components/Puzzle'
+import VoiceNote from './components/VoiceNote'
 import Footer from './components/Footer'
 
 const SECTION_COMPONENTS = {
@@ -16,6 +19,9 @@ const SECTION_COMPONENTS = {
   message: Message,
   wishes: Wishes,
   surprise: Surprise,
+  timeline: Timeline,
+  puzzle: Puzzle,
+  voicenote: VoiceNote,
 }
 
 export default function App() {

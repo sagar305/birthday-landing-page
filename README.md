@@ -41,8 +41,11 @@ Each entry in `sections` needs a unique `id` and a `type`. Supported types:
 
 - **`gallery`** – animated photo grid (`title`, `subtitle`, `items: [{ image, caption }]`)
 - **`reasons`** – grid of icon + text cards (`title`, `subtitle`, `items: [{ icon, text }]`)
+- **`timeline`** – vertical scroll-animated timeline of photos with alternating left/right cards (`title`, `subtitle`, `items: [{ date, image, caption }]`)
+- **`puzzle`** – a "How Much I Love You" jigsaw: photo pieces fly together on scroll, followed by an animated love meter that fills to 100% and then reveals a custom message (`title`, `subtitle`, `image`, `meterLabel`, `revealText`)
 - **`message`** – a love-letter style note (`title`, `body` — use `\n` for paragraph breaks, `signature`)
-- **`wishes`** – messages from friends/family (`title`, `subtitle`, `items: [{ name, avatar, message }]`)
+- **`wishes`** – a sliding carousel of messages from friends/family, one at a time with autoplay, arrows, and dots (`title`, `subtitle`, `items: [{ name, avatar, message }]`)
+- **`voicenote`** – an animated audio/video player for a personal voice or video message (`title`, `subtitle`, `audio: { url, label }`, `video: { url, label }`). Leave `audio.url`/`video.url` empty to omit either one.
 - **`surprise`** – a button that triggers a confetti burst and reveals a hidden message (`title`, `subtitle`, `buttonText`, `revealHeading`, `revealMessage`, `revealImage`)
 
 Sections are rendered in the order they appear in the array, so you can reorder, remove, or duplicate them freely.
