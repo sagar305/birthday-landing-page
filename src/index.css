@@ -33,3 +33,10 @@ body {
   background: linear-gradient(180deg, #f472b6, #a855f7);
   border-radius: 999px;
 }
+
+@media (pointer: fine) {
+  .cursor-none-fine,
+  .cursor-none-fine * {
+    cursor: none;
+  }
+}

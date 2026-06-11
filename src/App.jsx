@@ -12,6 +12,7 @@ import Timeline from './components/Timeline'
 import Puzzle from './components/Puzzle'
 import VoiceNote from './components/VoiceNote'
 import Footer from './components/Footer'
+import CustomCursor from './components/CustomCursor'
 
 const SECTION_COMPONENTS = {
   gallery: Gallery,
@@ -46,9 +47,10 @@ export default function App() {
 
   return (
     <div
-      className="min-h-screen w-full"
+      className="min-h-screen w-full cursor-none-fine"
       style={{ background: config.theme?.background || '#fff' }}
     >
+      <CustomCursor />
       <FloatingBackground />
       <Hero hero={config.hero} />
 
