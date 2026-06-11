@@ -17,9 +17,6 @@ import VoiceNote from './components/VoiceNote'
 import Footer from './components/Footer'
 import CustomCursor from './components/CustomCursor'
 
-const LOCK_SESSION_KEY = 'birthday-unlocked'
-const HEART_SESSION_KEY = 'birthday-heart-unlocked'
-
 const SECTION_COMPONENTS = {
   gallery: Gallery,
   reasons: Reasons,
@@ -33,12 +30,10 @@ const SECTION_COMPONENTS = {
 
 export default function App() {
   const { config, error } = useConfig()
-  const [unlocked, setUnlocked] = useState(
-    () => sessionStorage.getItem(LOCK_SESSION_KEY) === 'true'
-  )
-  const [heartUnlocked, setHeartUnlocked] = useState(
-    () => sessionStorage.getItem(HEART_SESSION_KEY) === 'true'
-  )
+  const [unlocked, setUnlocked] = useState(false)
+  const [heartUnlocked, setHeartUnlocked] = useState(false)
+  const [scrollUnlocked, setScrollUnlocked] = useState(false)
+  const [scrollGateTriggered, setScrollGateTriggered] = useState(false)
 
   useEffect(() => {
     if (config?.siteTitle) {
@@ -48,7 +43,12 @@ export default function App() {
 
   const locked = config?.lock?.enabled && !unlocked
   const heartGated = config?.heartGate?.enabled && !heartUnlocked
-  const scrollLocked = locked || heartGated
+
+  const scrollLockConfig = config?.scrollLock
+  const scrollGated =
+    scrollLockConfig?.enabled && scrollGateTriggered && !scrollUnlocked
+
+  const scrollLocked = locked || heartGated || scrollGated
 
   useEffect(() => {
     const value = scrollLocked ? 'hidden' : ''
@@ -59,6 +59,25 @@ export default function App() {
       document.body.style.overflow = ''
     }
   }, [scrollLocked])
+
+  useEffect(() => {
+    if (locked || heartGated) return
+    if (!scrollLockConfig?.enabled || scrollUnlocked || scrollGateTriggered) return
+
+    const threshold = scrollLockConfig.triggerPercent ?? 0.5
+
+    const handleScroll = () => {
+      const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight
+      if (scrollableHeight <= 0) return
+      const progress = window.scrollY / scrollableHeight
+      if (progress >= threshold) {
+        setScrollGateTriggered(true)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [locked, heartGated, scrollLockConfig, scrollUnlocked, scrollGateTriggered])
 
   if (error) {
     return (
@@ -71,15 +90,9 @@ export default function App() {
 
   if (!config) return <Loader />
 
-  const handleUnlock = () => {
-    sessionStorage.setItem(LOCK_SESSION_KEY, 'true')
-    setUnlocked(true)
-  }
-
-  const handleHeartUnlock = () => {
-    sessionStorage.setItem(HEART_SESSION_KEY, 'true')
-    setHeartUnlocked(true)
-  }
+  const handleUnlock = () => setUnlocked(true)
+  const handleHeartUnlock = () => setHeartUnlocked(true)
+  const handleScrollUnlock = () => setScrollUnlocked(true)
 
   return (
     <div
@@ -92,6 +105,9 @@ export default function App() {
         {locked && <LockScreen lock={config.lock} onUnlock={handleUnlock} />}
         {!locked && heartGated && (
           <HeartGate heartGate={config.heartGate} onUnlock={handleHeartUnlock} />
+        )}
+        {!locked && !heartGated && scrollGated && (
+          <LockScreen lock={scrollLockConfig} onUnlock={handleScrollUnlock} />
         )}
       </AnimatePresence>
 

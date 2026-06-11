@@ -41,7 +41,9 @@ Set `lock.enabled` to `true` to require a fun "password" before the page is reve
 }
 ```
 
-`answers` accepts multiple valid nicknames (case-insensitive, whitespace-trimmed). The hint appears after a wrong guess. Once unlocked, the page stays unlocked for the browser session (`sessionStorage`). Set `enabled` to `false` to skip the gate entirely.
+`answers` accepts multiple valid nicknames (case-insensitive, whitespace-trimmed). The hint appears after a wrong guess. Set `enabled` to `false` to skip the gate entirely.
+
+> **Note:** None of the gates below are remembered across page loads — every refresh shows the lock screen (and any other enabled gates) again, so the surprise stays fresh each time.
 
 ### Heart gate
 
@@ -57,7 +59,27 @@ Set `heartGate.enabled` to `true` to show a locked heart right after the lock sc
 }
 ```
 
-Set `enabled` to `false` to skip it. Like the lock screen, it stays unlocked for the browser session.
+Set `enabled` to `false` to skip it.
+
+### Scroll lock (mid-page checkpoint)
+
+Set `scrollLock.enabled` to `true` to show a second nickname lock once the visitor has scrolled past `triggerPercent` of the page (e.g. `0.5` = halfway). Scrolling is paused until the nickname is entered again. It uses the same fields as the lock screen.
+
+```json
+"scrollLock": {
+  "enabled": true,
+  "triggerPercent": 0.5,
+  "emoji": "🔐",
+  "question": "Wait... one more time, just to be sure 🥺",
+  "subtitle": "What do you call me again?",
+  "placeholder": "Type it here...",
+  "buttonText": "Yes, it's me 💕",
+  "answers": ["pookie"],
+  "hint": "Hehe, try again jaanu 😉"
+}
+```
+
+Set `enabled` to `false` to skip it.
 
 ### Hero
 

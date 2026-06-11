@@ -27,6 +27,17 @@
     "unlockedMessage": "There you go... now scroll down and let this melt your heart 💕",
     "cursorEmoji": "💖"
   },
+  "scrollLock": {
+    "enabled": true,
+    "triggerPercent": 0.5,
+    "emoji": "🔐",
+    "question": "Wait... one more time, just to be sure 🥺",
+    "subtitle": "What do you call me again?",
+    "placeholder": "Type it here...",
+    "buttonText": "Yes, it's me 💕",
+    "answers": ["pookie"],
+    "hint": "Hehe, try again jaanu 😉"
+  },
   "hero": {
     "eyebrow": "A Very Special Day For",
     "heading": "Happy Birthday, Riya!",
