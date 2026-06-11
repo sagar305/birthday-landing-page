@@ -64,10 +64,11 @@
       "title": "Our Journey Through Time",
       "subtitle": "A little walk down memory lane...",
       "items": [
-        { "date": "2019", "image": "https://picsum.photos/id/1005/500/400", "caption": "The day we first met — and I knew you were special." },
-        { "date": "2021", "image": "https://picsum.photos/id/1003/500/400", "caption": "Our first big trip together. Best decision ever." },
-        { "date": "2023", "image": "https://picsum.photos/id/1024/500/400", "caption": "Celebrating every little win, side by side." },
-        { "date": "2025", "image": "https://picsum.photos/id/1035/500/400", "caption": "Still laughing, still us — just getting started." }
+        { "date": "March 2019", "image": "https://picsum.photos/id/1005/500/400", "caption": "The day we first met — and I knew you were special." },
+        { "date": "July 2021", "image": "https://picsum.photos/id/1003/500/400", "caption": "Our first big trip together. Best decision ever." },
+        { "date": "December 2022", "image": "https://picsum.photos/id/1024/500/400", "caption": "Celebrating every little win, side by side." },
+        { "date": "October 2023", "image": "https://picsum.photos/id/1011/500/400", "caption": "A surprise weekend getaway you still talk about." },
+        { "date": "February 2025", "image": "https://picsum.photos/id/1035/500/400", "caption": "Still laughing, still us — just getting started." }
       ]
     },
     {
