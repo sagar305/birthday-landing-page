@@ -17,6 +17,7 @@ export default function Reasons({ section }) {
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.5, delay: i * 0.08, type: 'spring', stiffness: 150 }}
             whileHover={{ y: -8, boxShadow: '0 20px 25px -5px rgba(244,63,94,0.2)' }}
+            whileTap={{ scale: 0.96, y: -4, boxShadow: '0 20px 25px -5px rgba(244,63,94,0.2)' }}
           >
             <motion.span
               className="text-4xl"

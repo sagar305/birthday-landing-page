@@ -4,6 +4,7 @@ import { useConfig } from './hooks/useConfig'
 import FloatingBackground from './components/FloatingBackground'
 import Loader from './components/Loader'
 import LockScreen from './components/LockScreen'
+import HeartGate from './components/HeartGate'
 import Hero from './components/Hero'
 import Gallery from './components/Gallery'
 import Reasons from './components/Reasons'
@@ -17,6 +18,7 @@ import Footer from './components/Footer'
 import CustomCursor from './components/CustomCursor'
 
 const LOCK_SESSION_KEY = 'birthday-unlocked'
+const HEART_SESSION_KEY = 'birthday-heart-unlocked'
 
 const SECTION_COMPONENTS = {
   gallery: Gallery,
@@ -34,12 +36,29 @@ export default function App() {
   const [unlocked, setUnlocked] = useState(
     () => sessionStorage.getItem(LOCK_SESSION_KEY) === 'true'
   )
+  const [heartUnlocked, setHeartUnlocked] = useState(
+    () => sessionStorage.getItem(HEART_SESSION_KEY) === 'true'
+  )
 
   useEffect(() => {
     if (config?.siteTitle) {
       document.title = config.siteTitle
     }
   }, [config])
+
+  const locked = config?.lock?.enabled && !unlocked
+  const heartGated = config?.heartGate?.enabled && !heartUnlocked
+  const scrollLocked = locked || heartGated
+
+  useEffect(() => {
+    const value = scrollLocked ? 'hidden' : ''
+    document.documentElement.style.overflow = value
+    document.body.style.overflow = value
+    return () => {
+      document.documentElement.style.overflow = ''
+      document.body.style.overflow = ''
+    }
+  }, [scrollLocked])
 
   if (error) {
     return (
@@ -57,17 +76,23 @@ export default function App() {
     setUnlocked(true)
   }
 
-  const locked = config.lock?.enabled && !unlocked
+  const handleHeartUnlock = () => {
+    sessionStorage.setItem(HEART_SESSION_KEY, 'true')
+    setHeartUnlocked(true)
+  }
 
   return (
     <div
       className="min-h-screen w-full cursor-none-fine"
       style={{ background: config.theme?.background || '#fff' }}
     >
-      <CustomCursor />
+      <CustomCursor emoji={heartUnlocked ? config.heartGate?.cursorEmoji : null} />
 
       <AnimatePresence>
         {locked && <LockScreen lock={config.lock} onUnlock={handleUnlock} />}
+        {!locked && heartGated && (
+          <HeartGate heartGate={config.heartGate} onUnlock={handleHeartUnlock} />
+        )}
       </AnimatePresence>
 
       {!locked && (

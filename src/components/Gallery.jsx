@@ -17,6 +17,7 @@ export default function Gallery({ section }) {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: (i % 3) * 0.1, ease: 'easeOut' }}
             whileHover={{ scale: 1.04, rotate: 0, zIndex: 10 }}
+            whileTap={{ scale: 0.97, rotate: 0, zIndex: 10 }}
           >
             <img
               src={item.image}
@@ -24,7 +25,7 @@ export default function Gallery({ section }) {
               className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               loading="lazy"
             />
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-left text-sm font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-left text-sm font-medium text-white opacity-100 transition-opacity duration-300 sm:opacity-0 sm:group-hover:opacity-100">
               {item.caption}
             </figcaption>
           </motion.figure>

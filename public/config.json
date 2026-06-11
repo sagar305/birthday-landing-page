@@ -20,6 +20,13 @@
     "answers": ["pookie"],
     "hint": "Try again, jaanu... think about what you whisper to me 😉"
   },
+  "heartGate": {
+    "enabled": true,
+    "title": "There's something locked just for you...",
+    "subtitle": "Tap the heart to set it free 💗",
+    "unlockedMessage": "There you go... now scroll down and let this melt your heart 💕",
+    "cursorEmoji": "💖"
+  },
   "hero": {
     "eyebrow": "A Very Special Day For",
     "heading": "Happy Birthday, Riya!",

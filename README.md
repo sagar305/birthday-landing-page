@@ -43,6 +43,22 @@ Set `lock.enabled` to `true` to require a fun "password" before the page is reve
 
 `answers` accepts multiple valid nicknames (case-insensitive, whitespace-trimmed). The hint appears after a wrong guess. Once unlocked, the page stays unlocked for the browser session (`sessionStorage`). Set `enabled` to `false` to skip the gate entirely.
 
+### Heart gate
+
+Set `heartGate.enabled` to `true` to show a locked heart right after the lock screen. Scrolling is disabled until it's tapped. Tapping it bursts into floating hearts/sparkles, reveals `unlockedMessage`, and switches the custom cursor to `cursorEmoji` for the rest of the visit.
+
+```json
+"heartGate": {
+  "enabled": true,
+  "title": "There's something locked just for you...",
+  "subtitle": "Tap the heart to set it free 💗",
+  "unlockedMessage": "There you go... now scroll down and let this melt your heart 💕",
+  "cursorEmoji": "💖"
+}
+```
+
+Set `enabled` to `false` to skip it. Like the lock screen, it stays unlocked for the browser session.
+
 ### Hero
 
 ```json

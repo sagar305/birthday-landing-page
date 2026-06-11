@@ -7,7 +7,7 @@ function isFinePointer() {
   return typeof window !== 'undefined' && window.matchMedia('(pointer: fine)').matches
 }
 
-export default function CustomCursor() {
+export default function CustomCursor({ emoji }) {
   const [enabled] = useState(isFinePointer)
   const [hovering, setHovering] = useState(false)
   const [clicking, setClicking] = useState(false)
@@ -19,6 +19,8 @@ export default function CustomCursor() {
   const dotY = useSpring(y, { damping: 30, stiffness: 600, mass: 0.3 })
   const ringX = useSpring(x, springConfig)
   const ringY = useSpring(y, springConfig)
+  const emojiX = useSpring(x, { damping: 18, stiffness: 250, mass: 0.6 })
+  const emojiY = useSpring(y, { damping: 18, stiffness: 250, mass: 0.6 })
 
   useEffect(() => {
     if (!enabled) return
@@ -44,6 +46,25 @@ export default function CustomCursor() {
   }, [enabled, x, y])
 
   if (!enabled) return null
+
+  if (emoji) {
+    return (
+      <motion.div
+        className="pointer-events-none fixed top-0 left-0 z-[9999] text-3xl select-none"
+        style={{ x: emojiX, y: emojiY, translateX: '-50%', translateY: '-50%' }}
+        animate={{
+          scale: clicking ? 1.4 : hovering ? 1.25 : 1,
+          rotate: [0, -8, 8, 0],
+        }}
+        transition={{
+          rotate: { duration: 2.4, repeat: Infinity, ease: 'easeInOut' },
+          scale: { type: 'spring', stiffness: 300, damping: 15 },
+        }}
+      >
+        {emoji}
+      </motion.div>
+    )
+  }
 
   return (
     <>

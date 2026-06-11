@@ -38,14 +38,15 @@ export default function Wishes({ section }) {
       <SectionHeading title={title} subtitle={subtitle} />
 
       <div className="relative mx-auto flex max-w-xl items-center justify-center gap-3 sm:gap-6">
-        <button
+        <motion.button
           type="button"
           onClick={() => paginate(-1)}
+          whileTap={{ scale: 0.85 }}
           className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-white text-rose-400 shadow-md transition hover:scale-110 hover:text-rose-500"
           aria-label="Previous wish"
         >
           ‹
-        </button>
+        </motion.button>
 
         <div className="relative h-56 w-full overflow-hidden sm:h-44">
           <AnimatePresence custom={direction} mode="wait">
@@ -57,7 +58,14 @@ export default function Wishes({ section }) {
               animate="center"
               exit="exit"
               transition={{ duration: 0.45, ease: 'easeOut' }}
-              className="absolute inset-0 flex flex-col items-center gap-3 rounded-2xl bg-white p-6 text-center shadow-md ring-1 ring-rose-50 sm:flex-row sm:items-center sm:gap-4 sm:text-left"
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.6}
+              onDragEnd={(_, info) => {
+                if (info.offset.x < -60) paginate(1)
+                else if (info.offset.x > 60) paginate(-1)
+              }}
+              className="absolute inset-0 flex cursor-grab flex-col items-center gap-3 rounded-2xl bg-white p-6 text-center shadow-md ring-1 ring-rose-50 active:cursor-grabbing sm:flex-row sm:items-center sm:gap-4 sm:text-left"
             >
               {item.avatar && (
                 <img
@@ -74,23 +82,25 @@ export default function Wishes({ section }) {
           </AnimatePresence>
         </div>
 
-        <button
+        <motion.button
           type="button"
           onClick={() => paginate(1)}
+          whileTap={{ scale: 0.85 }}
           className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-white text-rose-400 shadow-md transition hover:scale-110 hover:text-rose-500"
           aria-label="Next wish"
         >
           ›
-        </button>
+        </motion.button>
       </div>
 
       <div className="mt-6 flex justify-center gap-2">
         {items.map((_, i) => (
-          <button
+          <motion.button
             key={i}
             type="button"
             aria-label={`Go to wish ${i + 1}`}
             onClick={() => setIndex([i, i > index ? 1 : -1])}
+            whileTap={{ scale: 0.8 }}
             className={`h-2.5 rounded-full transition-all ${
               i === index ? 'w-6 bg-rose-400' : 'w-2.5 bg-rose-200'
             }`}
