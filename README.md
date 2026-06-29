@@ -108,6 +108,30 @@ Each entry in `sections` needs a unique `id` and a `type`. Supported types:
 
 Sections are rendered in the order they appear in the array, so you can reorder, remove, or duplicate them freely.
 
+### "Ask My Heart" chatbot widget
+
+Set `chatbot.enabled` to `true` to add a floating chat bubble (bottom-right) once the page is unlocked. It's a "fake AI" — there's no real model behind it, just a fixed set of `questions`/`answers` pairs you write in the JSON. Tapping a question shows a fun "digging through his heart" loader (cycling through `loadingMessages`) for `loadingDuration` ms before revealing the matching `answer`.
+
+```json
+"chatbot": {
+  "enabled": true,
+  "buttonEmoji": "🤖",
+  "title": "Ask My Heart",
+  "subtitle": "An AI that only knows how to talk about you",
+  "greeting": "Hii! Pick a question and I'll dig through his heart for the real answer 💕",
+  "loadingDuration": 1800,
+  "loadingMessages": [
+    "Digging through his heart...",
+    "Searching for the right feelings..."
+  ],
+  "questions": [
+    { "question": "Do you love me?", "answer": "More than words can ever say... ❤️" }
+  ]
+}
+```
+
+Set `enabled` to `false` to hide the widget entirely.
+
 ## Tech stack
 
 - [Vite](https://vite.dev/) + React 19

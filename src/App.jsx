@@ -16,6 +16,7 @@ import Puzzle from './components/Puzzle'
 import VoiceNote from './components/VoiceNote'
 import Footer from './components/Footer'
 import CustomCursor from './components/CustomCursor'
+import ChatbotWidget from './components/ChatbotWidget'
 
 const SECTION_COMPONENTS = {
   gallery: Gallery,
@@ -125,6 +126,8 @@ export default function App() {
           <Footer footer={config.footer} />
         </>
       )}
+
+      {!locked && !heartGated && !scrollGated && <ChatbotWidget chatbot={config.chatbot} />}
     </div>
   )
 }

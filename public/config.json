@@ -144,5 +144,41 @@
   ],
   "footer": {
     "text": "Made with ❤️ by Sagar, just for you."
+  },
+  "chatbot": {
+    "enabled": true,
+    "buttonEmoji": "🤖",
+    "title": "Ask My Heart",
+    "subtitle": "An AI that only knows how to talk about you",
+    "greeting": "Hii! Pick a question and I'll dig through his heart for the real answer 💕",
+    "loadingDuration": 1800,
+    "loadingMessages": [
+      "Digging through his heart...",
+      "Searching for the right feelings...",
+      "Consulting the butterflies in his stomach...",
+      "Decoding the love algorithm..."
+    ],
+    "questions": [
+      {
+        "question": "Do you love me?",
+        "answer": "More than words can ever say... infinitely and always. ❤️"
+      },
+      {
+        "question": "What do you love most about me?",
+        "answer": "Your smile, your kindness, and the way you make ordinary days feel magical."
+      },
+      {
+        "question": "Will you always be there for me?",
+        "answer": "Always. No matter what happens, I'm not going anywhere. 💍"
+      },
+      {
+        "question": "What's your favorite memory of us?",
+        "answer": "Every single one — but especially the quiet, ordinary ones with you."
+      },
+      {
+        "question": "Am I your best decision?",
+        "answer": "The very best one. Choosing you was the easiest 'yes' of my life."
+      }
+    ]
   }
 }
