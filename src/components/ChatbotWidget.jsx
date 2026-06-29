@@ -56,10 +56,14 @@ export default function ChatbotWidget({ chatbot }) {
   const [open, setOpen] = useState(false)
   const [messages, setMessages] = useState([])
   const [busy, setBusy] = useState(false)
+  const [askedIndexes, setAskedIndexes] = useState(() => new Set())
   const scrollRef = useRef(null)
   const idRef = useRef(0)
 
-  const questions = chatbot?.questions || []
+  const allQuestions = chatbot?.questions || []
+  const remainingQuestions = allQuestions
+    .map((q, i) => ({ ...q, index: i }))
+    .filter((q) => !askedIndexes.has(q.index))
   const loadingMessages = chatbot?.loadingMessages?.length
     ? chatbot.loadingMessages
     : DEFAULT_LOADING_MESSAGES
@@ -80,6 +84,7 @@ export default function ChatbotWidget({ chatbot }) {
   const askQuestion = (item) => {
     if (busy) return
     setMessages((prev) => [...prev, { id: idRef.current++, role: 'user', text: item.question }])
+    setAskedIndexes((prev) => new Set(prev).add(item.index))
     setBusy(true)
     setTimeout(() => {
       setMessages((prev) => [...prev, { id: idRef.current++, role: 'bot', text: item.answer }])
@@ -155,22 +160,32 @@ export default function ChatbotWidget({ chatbot }) {
               {busy && <ThinkingBubble messages={loadingMessages} />}
             </div>
 
-            {questions.length > 0 && (
+            {remainingQuestions.length > 0 ? (
               <div className="flex flex-wrap gap-2 border-t border-rose-100 px-4 py-3">
-                {questions.map((q, i) => (
-                  <motion.button
-                    key={i}
-                    type="button"
-                    disabled={busy}
-                    onClick={() => askQuestion(q)}
-                    whileHover={{ scale: busy ? 1 : 1.05 }}
-                    whileTap={{ scale: busy ? 1 : 0.95 }}
-                    className="cursor-hover rounded-full border border-rose-200 bg-white px-3 py-1.5 text-xs font-medium text-rose-500 transition disabled:cursor-not-allowed disabled:opacity-40"
-                  >
-                    {q.question}
-                  </motion.button>
-                ))}
+                <AnimatePresence>
+                  {remainingQuestions.map((q) => (
+                    <motion.button
+                      key={q.index}
+                      type="button"
+                      disabled={busy}
+                      onClick={() => askQuestion(q)}
+                      initial={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.8 }}
+                      whileHover={{ scale: busy ? 1 : 1.05 }}
+                      whileTap={{ scale: busy ? 1 : 0.95 }}
+                      className="cursor-hover rounded-full border border-rose-200 bg-white px-3 py-1.5 text-xs font-medium text-rose-500 transition disabled:cursor-not-allowed disabled:opacity-40"
+                    >
+                      {q.question}
+                    </motion.button>
+                  ))}
+                </AnimatePresence>
               </div>
+            ) : (
+              allQuestions.length > 0 && (
+                <p className="border-t border-rose-100 px-4 py-3 text-center text-xs text-rose-400">
+                  That's everything my heart knows... for now 💕
+                </p>
+              )
             )}
           </motion.div>
         )}
