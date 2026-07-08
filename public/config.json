@@ -29,7 +29,7 @@
   },
   "scrollLock": {
     "enabled": true,
-    "triggerPercent": 0.6,
+    "triggerPercent": 0.8,
     "emoji": "🔐",
     "question": "Wait... one more time, just to be sure 🥺",
     "subtitle": "What do you call me again?",
