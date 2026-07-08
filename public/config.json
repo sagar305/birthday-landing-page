@@ -11,7 +11,7 @@
     "background": "linear-gradient(135deg, #fff1f2 0%, #fdf2ff 45%, #eef2ff 100%)"
   },
   "lock": {
-    "enabled": true,
+    "enabled": false,
     "emoji": "💌",
     "question": "Before you come in... what do you call me? 🥺",
     "subtitle": "Hint: it's the name only you use for me 💕",
@@ -21,7 +21,7 @@
     "hint": "Try again, jaanu... think about what you whisper to me 😉"
   },
   "heartGate": {
-    "enabled": true,
+    "enabled": false,
     "title": "There's something locked just for you...",
     "subtitle": "Tap the heart to set it free 💗",
     "unlockedMessage": "There you go... now scroll down and let this melt your heart 💕",
