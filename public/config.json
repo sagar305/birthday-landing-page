@@ -1,8 +1,8 @@
 {
-  "siteTitle": "Happy Birthday, Riya! 🎂",
+  "siteTitle": "Happy Birthday, Biwi! 🎂",
   "person": {
-    "name": "Riya",
-    "from": "Sagar"
+    "name": "Biwi",
+    "from": "Pookie"
   },
   "theme": {
     "primaryColor": "#fb7185",
@@ -29,7 +29,7 @@
   },
   "scrollLock": {
     "enabled": true,
-    "triggerPercent": 0.5,
+    "triggerPercent": 0.6,
     "emoji": "🔐",
     "question": "Wait... one more time, just to be sure 🥺",
     "subtitle": "What do you call me again?",
@@ -42,7 +42,7 @@
     "eyebrow": "A Very Special Day For",
     "heading": "Happy Birthday, Riya!",
     "subheading": "Today the whole world should celebrate the most amazing, kind, and beautiful person I know — because she's you. 🎉",
-    "image": "https://picsum.photos/id/1027/600/600",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491846/IMG_0999_cbakts.heic",
     "ctaText": "Scroll down for a surprise"
   },
   "sections": [
