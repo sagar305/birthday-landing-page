@@ -52,7 +52,7 @@
       "title": "Our Favorite Memories",
       "subtitle": "Every picture tells a little piece of our story.",
       "items": [
-        { "image": "https://picsum.photos/id/1011/500/600", "caption": "The trip we never stopped talking about" },
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491847/IMG-20250303-WA0040_rxzqa6.jpg", "caption": "Here, We start our Journey" },
         { "image": "https://picsum.photos/id/1012/500/600", "caption": "That night we danced until 2am" },
         { "image": "https://picsum.photos/id/1013/500/600", "caption": "Your smile on a random Tuesday" },
         { "image": "https://picsum.photos/id/1015/500/600", "caption": "Lost, but happy together" },
