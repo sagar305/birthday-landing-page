@@ -52,7 +52,7 @@
       "title": "Our Favorite Memories",
       "subtitle": "Every picture tells a little piece of our story.",
       "items": [
-        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491847/IMG-20250303-WA0040_rxzqa6.jpg", "caption": "Here, We start our Journey" },
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491847/IMG-20250303-WA0040_rxzqa6.jpg", "caption": "Here, We start our Journey", "skipPercent": 0 },
         { "image": "https://picsum.photos/id/1012/500/600", "caption": "That night we danced until 2am" },
         { "image": "https://picsum.photos/id/1013/500/600", "caption": "Your smile on a random Tuesday" },
         { "image": "https://picsum.photos/id/1015/500/600", "caption": "Lost, but happy together" },
@@ -88,7 +88,7 @@
       "title": "Our Journey Through Time",
       "subtitle": "A little walk down memory lane...",
       "items": [
-        { "date": "March 2019", "image": "https://picsum.photos/id/1005/500/400", "caption": "The day we first met — and I knew you were special." },
+        { "date": "March 2019", "image": "https://picsum.photos/id/1005/500/400", "caption": "The day we first met — and I knew you were special.", "skipPercent": 0 },
         { "date": "July 2021", "image": "https://picsum.photos/id/1003/500/400", "caption": "Our first big trip together. Best decision ever." },
         { "date": "December 2022", "image": "https://picsum.photos/id/1024/500/400", "caption": "Celebrating every little win, side by side." },
         { "date": "October 2023", "image": "https://picsum.photos/id/1011/500/400", "caption": "A surprise weekend getaway you still talk about." },
