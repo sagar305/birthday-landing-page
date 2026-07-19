@@ -49,15 +49,15 @@
     {
       "id": "memories",
       "type": "gallery",
-      "title": "Our Favorite Memories",
-      "subtitle": "Every picture tells a little piece of our story.",
+      "title": "Here Many Look, Many Role but One Biwi",
+      "subtitle": "Every picture tells a little piece of other role.",
       "items": [
-        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491847/IMG-20250303-WA0040_rxzqa6.jpg", "caption": "Here, We start our Journey" },
-        { "image": "https://picsum.photos/id/1012/500/600", "caption": "That night we danced until 2am" },
-        { "image": "https://picsum.photos/id/1013/500/600", "caption": "Your smile on a random Tuesday" },
-        { "image": "https://picsum.photos/id/1015/500/600", "caption": "Lost, but happy together" },
-        { "image": "https://picsum.photos/id/1016/500/600", "caption": "Coffee, laughter, repeat" },
-        { "image": "https://picsum.photos/id/1018/500/600", "caption": "Adventures waiting to happen" }
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784440911/IMG20260321115137_vtif6c.jpg", "caption": "That's a saree look!" },
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491851/IMG-20251111-WA0016_a0ocxu.jpg", "caption": "Suit tenu Jachda🥰" },
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441467/IMG20251010175426_smikbr.jpg", "caption": "Bahu wala lehenga Look!" },
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441786/IMG_0995_1_tzwj0c.png", "caption": "that's my barbie look 🧞‍♀️" },
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441786/IMG_0328_1_fxgcho.png", "caption": "That's peak sexiest look 🔥" },
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441941/IMG_2432_1_ipothh.png", "caption": "That's b'day look" }
       ]
     },
     {
