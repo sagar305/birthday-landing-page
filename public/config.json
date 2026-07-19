@@ -122,6 +122,7 @@
     {
       "id": "wishes",
       "type": "wishes",
+      "enabled": false,
       "title": "Birthday Wishes From Everyone",
       "subtitle": "Friends and family share their love for you",
       "items": [
@@ -134,6 +135,7 @@
     {
       "id": "voicenote",
       "type": "voicenote",
+      "enabled": false,
       "title": "A Little Something To Hear",
       "subtitle": "Press play whenever you're ready 💌",
       "audio": {

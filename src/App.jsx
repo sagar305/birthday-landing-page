@@ -129,7 +129,7 @@ export default function App() {
 
           {config.sections?.map((section) => {
             const Component = SECTION_COMPONENTS[section.type]
-            if (!Component) return null
+            if (!Component || section.enabled === false) return null
             return <Component key={section.id} section={section} />
           })}
 
