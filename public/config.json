@@ -57,7 +57,7 @@
         { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441467/IMG20251010175426_smikbr.jpg", "caption": "Bahu wala lehenga Look!" },
         { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441786/IMG_0995_1_tzwj0c.png", "caption": "that's my barbie look 🧞‍♀️" },
         { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441786/IMG_0328_1_fxgcho.png", "caption": "That's peak sexiest look 🔥" },
-        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441941/IMG_2432_1_ipothh.png", "caption": "That's b'day look" }
+        { "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784441941/IMG_2432_1_ipothh.png", "caption": "That's b'day look", "skipPercent": 25 }
       ]
     },
     {
@@ -88,7 +88,7 @@
       "title": "Our Journey Through Time",
       "subtitle": "A little walk down memory lane...",
       "items": [
-        { "date": "March 2019", "image": "https://picsum.photos/id/1005/500/400", "caption": "The day we first met — and I knew you were special." },
+        { "date": "March 2019", "image": "https://picsum.photos/id/1005/500/400", "caption": "The day we first met — and I knew you were special.", "skipPercent": 0 },
         { "date": "July 2021", "image": "https://picsum.photos/id/1003/500/400", "caption": "Our first big trip together. Best decision ever." },
         { "date": "December 2022", "image": "https://picsum.photos/id/1024/500/400", "caption": "Celebrating every little win, side by side." },
         { "date": "October 2023", "image": "https://picsum.photos/id/1011/500/400", "caption": "A surprise weekend getaway you still talk about." },
