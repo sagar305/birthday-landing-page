@@ -86,12 +86,12 @@
       "id": "timeline",
       "type": "timeline",
       "title": "Our Journey Through Time",
-      "subtitle": "A little walk down memory lane..."
+      "subtitle": "A little walk down memory lane...",
       "items": [
   {
     "date": "March 2025",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491847/IMG-20250303-WA0040_rxzqa6.jpg",
-    "caption": "Our first Moment of celebration and togetherness."
+    "caption": "Our first Moment of celebration and togetherness.",
     "skipPercent": 0
   },
   {
