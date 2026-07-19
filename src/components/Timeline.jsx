@@ -38,7 +38,7 @@ function TimelineItem({ item, isLeft }) {
               <motion.img
                 src={item.image}
                 alt={item.caption}
-                className="h-[140%] w-full object-cover"
+                className="h-[140%] w-full object-cover object-top"
                 style={{ y: imageY }}
                 loading="lazy"
               />

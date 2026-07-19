@@ -22,7 +22,7 @@ export default function Gallery({ section }) {
             <img
               src={item.image}
               alt={item.caption}
-              className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              className="h-72 w-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
               loading="lazy"
             />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-left text-sm font-medium text-white opacity-100 transition-opacity duration-300 sm:opacity-0 sm:group-hover:opacity-100">
