@@ -3,6 +3,7 @@ import { AnimatePresence } from 'motion/react'
 import { useConfig } from './hooks/useConfig'
 import FloatingBackground from './components/FloatingBackground'
 import Loader from './components/Loader'
+import Countdown from './components/Countdown'
 import LockScreen from './components/LockScreen'
 import HeartGate from './components/HeartGate'
 import Hero from './components/Hero'
@@ -37,12 +38,16 @@ export default function App() {
   const [heartUnlocked, setHeartUnlocked] = useState(false)
   const [scrollUnlocked, setScrollUnlocked] = useState(false)
   const [scrollGateTriggered, setScrollGateTriggered] = useState(false)
+  const [countdownFinished, setCountdownFinished] = useState(false)
 
   useEffect(() => {
     if (config?.siteTitle) {
       document.title = config.siteTitle
     }
   }, [config])
+
+  const countdownConfig = config?.countdown
+  const countdownActive = countdownConfig?.enabled && !countdownFinished
 
   const locked = config?.lock?.enabled && !unlocked
   const heartGated = config?.heartGate?.enabled && !heartUnlocked
@@ -51,7 +56,7 @@ export default function App() {
   const scrollGated =
     scrollLockConfig?.enabled && scrollGateTriggered && !scrollUnlocked
 
-  const scrollLocked = locked || heartGated || scrollGated
+  const scrollLocked = countdownActive || locked || heartGated || scrollGated
 
   useEffect(() => {
     const value = scrollLocked ? 'hidden' : ''
@@ -105,6 +110,9 @@ export default function App() {
       <CustomCursor emoji={heartUnlocked ? config.heartGate?.cursorEmoji : null} />
 
       <AnimatePresence>
+        {countdownActive && (
+          <Countdown countdown={countdownConfig} onFinish={() => setCountdownFinished(true)} />
+        )}
         {locked && <LockScreen lock={config.lock} onUnlock={handleUnlock} />}
         {!locked && heartGated && (
           <HeartGate heartGate={config.heartGate} onUnlock={handleHeartUnlock} />
@@ -129,7 +137,9 @@ export default function App() {
         </>
       )}
 
-      {!locked && !heartGated && !scrollGated && <ChatbotWidget chatbot={config.chatbot} />}
+      {!countdownActive && !locked && !heartGated && !scrollGated && (
+        <ChatbotWidget chatbot={config.chatbot} />
+      )}
     </div>
   )
 }
