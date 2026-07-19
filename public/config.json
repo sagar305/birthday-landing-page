@@ -77,6 +77,12 @@
       ]
     },
     {
+      "id": "cake-cutting",
+      "type": "cakecutting",
+      "title": "Time To Cut The Cake! 🎂",
+      "subtitle": "Scroll slowly... and watch the magic happen."
+    },
+    {
       "id": "timeline",
       "type": "timeline",
       "title": "Our Journey Through Time",

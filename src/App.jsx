@@ -7,6 +7,7 @@ import LockScreen from './components/LockScreen'
 import HeartGate from './components/HeartGate'
 import Hero from './components/Hero'
 import Gallery from './components/Gallery'
+import CakeCutting from './components/CakeCutting'
 import Reasons from './components/Reasons'
 import Message from './components/Message'
 import Wishes from './components/Wishes'
@@ -20,6 +21,7 @@ import ChatbotWidget from './components/ChatbotWidget'
 
 const SECTION_COMPONENTS = {
   gallery: Gallery,
+  cakecutting: CakeCutting,
   reasons: Reasons,
   message: Message,
   wishes: Wishes,
