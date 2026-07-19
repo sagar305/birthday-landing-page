@@ -141,7 +141,7 @@ function makeBladeGeometry() {
 }
 const BLADE_GEOMETRY = makeBladeGeometry()
 
-const SKIN = '#b0714a'
+const SKIN = '#f2c49c'
 const HAIR = '#241611'
 const TOP = '#f3a7c0'
 const SKIRT = '#26222c'
@@ -275,7 +275,7 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
         {/* nose + smile + blush */}
         <mesh position={[0, -0.04, 0.3]} scale={[1, 1.2, 0.7]}>
           <sphereGeometry args={[0.022, 10, 10]} />
-          <meshStandardMaterial color="#96562f" roughness={0.6} />
+          <meshStandardMaterial color="#e0a276" roughness={0.6} />
         </mesh>
         {/* big open smile: dark mouth + rosy lower lip */}
         <group position={[0, -0.1, 0.296]} rotation={[0.3, 0, 0]}>
@@ -295,7 +295,7 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
         {[-0.18, 0.18].map((x) => (
           <mesh key={x} position={[x, -0.06, 0.24]} scale={[1, 0.7, 0.4]}>
             <sphereGeometry args={[0.05, 10, 10]} />
-            <meshStandardMaterial color="#c96f57" roughness={0.8} transparent opacity={0.55} />
+            <meshStandardMaterial color="#f19a92" roughness={0.8} transparent opacity={0.6} />
           </mesh>
         ))}
       </group>
