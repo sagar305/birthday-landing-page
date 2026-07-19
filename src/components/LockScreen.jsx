@@ -61,7 +61,8 @@ export default function LockScreen({ lock, onUnlock }) {
         )}
 
         <input
-          type="text"
+          type="password"
+          autoComplete="off"
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder={lock.placeholder || 'Type your answer...'}
