@@ -213,7 +213,8 @@
   {
     "date": "Nov 2025",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491872/IMG20251102233836_c8srku.jpg",
-    "caption": "its sasural first family function, and this is our first family function together."
+    "caption": "its sasural first family function, and this is our first family function together.",
+    "skipPercent": 25
   },
   {
     "date": "Nov 2025",
@@ -242,13 +243,9 @@
   },
   {
     "date": "Feb 2026",
-    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491850/IMG-20260208-WA0041_kmt4sc.jpg",
-    "caption": "Aree abhi bhi wahi h."
-  },
-  {
-    "date": "Feb 2026",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783492835/IMG20260208174859_ok1iiw.jpg",
-    "caption": "Aree abhi bhi wahi h. ye to aani hi thi"
+    "caption": "Aree abhi bhi wahi h. ye to aani hi thi",
+    "skipPercent": 25
   },
   {
     "date": "Feb 2026",
@@ -258,22 +255,19 @@
   {
     "date": "March 2026",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784461943/IMG20260305083817_yh6jez.jpg",
-    "caption": "Its time to celbrate colour in our life."
+    "caption": "Its time to celbrate colour in our life.",
+    "skipPercent": 10
   },
   {
     "date": "Apr 2026",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462113/IMG20260405182223_drzuaa.jpg",
-    "caption": "Ye h mele wali selfi."
+    "caption": "Ye h mele wali selfi.",
+    "skipPercent": 25
   },
   {
     "date": "Apr 2026",
-    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462113/IMG20260405182223_drzuaa.jpg",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491883/IMG20260430204903_s2eno1.jpg",
     "caption": "Ab m thak gya, isse kya bolu barbique wali selfi?"
-  },
-  {
-    "date": "May 2026",
-    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462340/IMG_0115_xbd66s_c4h7lh.png",
-    "caption": "1 Year about to complete, and this is our first anniversary celebration together."
   },
   {
     "date": "May 2026",
@@ -297,18 +291,14 @@
   },
   {
     "date": "May 2026",
-    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462343/IMG_1209_tkmiaz_w9aind.png",
-    "caption": "thak gye hoge scroll krte krte paani peelo."
-  },
-  {
-    "date": "May 2026",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462346/IMG_1266_q41kkq_sbtvna.png",
     "caption": "Chuna laga diya city walk mall k naam pr."
   },
   {
     "date": "June 2026",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462753/IMG_1374_x77lq1_1_zfhkdl.png",
-    "caption": "how cutely you did all this hard work to make this gift thankyou again."
+    "caption": "how cutely you did all this hard work to make this gift thankyou again.",
+    "skipPercent": 10
   },
   {
     "date": "June 2026",
