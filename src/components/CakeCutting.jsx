@@ -213,13 +213,13 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
           <sphereGeometry args={[0.24, 20, 20]} />
           <meshStandardMaterial color={HAIR} roughness={0.45} />
         </mesh>
-        {/* side-swept bangs */}
+        {/* side-swept bangs hugging the forehead */}
         {[
-          [-0.14, 0.2, 0.22, 0.5],
-          [0.05, 0.23, 0.23, -0.2],
-          [0.19, 0.19, 0.2, -0.6],
+          [-0.16, 0.17, 0.21, 0.55],
+          [-0.02, 0.2, 0.23, 0.1],
+          [0.13, 0.18, 0.21, -0.45],
         ].map(([x, y, z, rz], i) => (
-          <mesh key={i} position={[x, y, z]} rotation={[0.3, 0, rz]} scale={[0.5, 1.4, 0.5]}>
+          <mesh key={i} position={[x, y, z]} rotation={[0.65, 0, rz]} scale={[0.65, 0.85, 0.35]}>
             <sphereGeometry args={[0.11, 12, 12]} />
             <meshStandardMaterial color={HAIR} roughness={0.45} />
           </mesh>
@@ -242,16 +242,16 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
               <sphereGeometry args={[0.028, 12, 12]} />
               <meshStandardMaterial color="#3d2314" roughness={0.15} />
             </mesh>
-            <mesh position={[0.01, 0.015, 0.04]}>
-              <sphereGeometry args={[0.008, 8, 8]} />
+            <mesh position={[0.012, 0.018, 0.04]}>
+              <sphereGeometry args={[0.011, 8, 8]} />
               <meshBasicMaterial color="#ffffff" />
             </mesh>
           </group>
         ))}
-        {/* brows */}
+        {/* brows, gently raised */}
         {[-0.1, 0.1].map((x) => (
-          <mesh key={x} position={[x, 0.11, 0.27]} rotation={[0.25, 0, x > 0 ? 0.12 : -0.12]}>
-            <boxGeometry args={[0.065, 0.013, 0.015]} />
+          <mesh key={x} position={[x, 0.13, 0.265]} rotation={[0.25, 0, x > 0 ? 0.05 : -0.05]}>
+            <boxGeometry args={[0.06, 0.011, 0.014]} />
             <meshStandardMaterial color={HAIR} />
           </mesh>
         ))}
@@ -260,10 +260,21 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
           <sphereGeometry args={[0.022, 10, 10]} />
           <meshStandardMaterial color="#e6a97e" roughness={0.6} />
         </mesh>
-        <mesh position={[0, -0.09, 0.27]} rotation={[0.4, 0, Math.PI]}>
-          <torusGeometry args={[0.045, 0.009, 8, 16, Math.PI]} />
-          <meshStandardMaterial color="#b3543f" roughness={0.5} />
-        </mesh>
+        {/* big open smile: dark mouth + rosy lower lip */}
+        <group position={[0, -0.1, 0.296]} rotation={[0.3, 0, 0]}>
+          <mesh rotation={[0, 0, Math.PI]}>
+            <circleGeometry args={[0.055, 20, 0, Math.PI]} />
+            <meshStandardMaterial color="#8c3a30" roughness={0.6} />
+          </mesh>
+          <mesh position={[0, 0.002, 0.001]} rotation={[0, 0, Math.PI]}>
+            <torusGeometry args={[0.055, 0.011, 8, 20, Math.PI]} />
+            <meshStandardMaterial color="#d96a5c" roughness={0.5} />
+          </mesh>
+          <mesh position={[0, -0.014, 0.002]} scale={[1, 0.55, 0.4]}>
+            <sphereGeometry args={[0.03, 12, 12]} />
+            <meshStandardMaterial color="#ef8d8d" roughness={0.5} />
+          </mesh>
+        </group>
         {[-0.18, 0.18].map((x) => (
           <mesh key={x} position={[x, -0.06, 0.24]} scale={[1, 0.7, 0.4]}>
             <sphereGeometry args={[0.05, 10, 10]} />
