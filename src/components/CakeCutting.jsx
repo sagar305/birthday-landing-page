@@ -141,56 +141,67 @@ function makeBladeGeometry() {
 }
 const BLADE_GEOMETRY = makeBladeGeometry()
 
-const SKIN = '#eeb98e'
-const HAIR = '#4a2c17'
-const DRESS = '#e75f8f'
+const SKIN = '#b0714a'
+const HAIR = '#241611'
+const TOP = '#f3a7c0'
+const SKIRT = '#26222c'
 
 function Girl({ shoulderRef, elbowRef, girlRef }) {
   const dressPoints = useMemo(
     () =>
       [
-        [0.05, 1.34],
-        [0.17, 1.32],
-        [0.19, 1.18],
-        [0.21, 1.05],
-        [0.27, 0.88],
-        [0.38, 0.65],
-        [0.5, 0.42],
-        [0.58, 0.24],
-        [0.6, 0.18],
+        [0.05, 1.16],
+        [0.19, 1.14],
+        [0.22, 1.02],
+        [0.3, 0.86],
+        [0.42, 0.68],
+        [0.5, 0.56],
       ].map(([x, y]) => new THREE.Vector2(x, y)),
     [],
   )
 
   return (
     <group ref={girlRef} position={[-1.1, 0, -1.3]} rotation={[0, 0.5, 0]}>
-      {/* legs + shoes */}
+      {/* bare legs + white sneakers */}
       {[-0.13, 0.13].map((x) => (
         <group key={x}>
-          <mesh position={[x, 0.14, 0]} castShadow>
-            <cylinderGeometry args={[0.055, 0.05, 0.3, 12]} />
+          <mesh position={[x, 0.32, 0]} castShadow>
+            <cylinderGeometry args={[0.055, 0.05, 0.52, 12]} />
             <meshStandardMaterial color={SKIN} roughness={0.6} />
           </mesh>
-          <mesh position={[x, 0.035, 0.04]} castShadow scale={[1, 0.55, 1.5]}>
-            <sphereGeometry args={[0.075, 14, 14]} />
-            <meshPhysicalMaterial color="#b03052" roughness={0.25} clearcoat={0.8} />
+          <mesh position={[x, 0.045, 0.04]} castShadow scale={[1, 0.6, 1.5]}>
+            <sphereGeometry args={[0.078, 14, 14]} />
+            <meshPhysicalMaterial color="#f5f4f0" roughness={0.35} clearcoat={0.5} />
           </mesh>
         </group>
       ))}
-      {/* A-line dress */}
+      {/* black skater skirt */}
       <mesh castShadow>
         <latheGeometry args={[dressPoints, 40]} />
-        <meshStandardMaterial color={DRESS} roughness={0.75} side={THREE.DoubleSide} />
+        <meshStandardMaterial color={SKIRT} roughness={0.8} side={THREE.DoubleSide} />
       </mesh>
-      {/* waist sash */}
+      {/* knotted shirt hem at the waist */}
       <mesh position={[0, 1.16, 0]}>
-        <cylinderGeometry args={[0.215, 0.225, 0.07, 24]} />
-        <meshPhysicalMaterial color="#fbd0e0" roughness={0.4} clearcoat={0.4} />
+        <cylinderGeometry args={[0.215, 0.225, 0.08, 24]} />
+        <meshStandardMaterial color={TOP} roughness={0.7} />
       </mesh>
-      {/* torso */}
+      <mesh position={[0, 1.13, 0.2]} castShadow>
+        <sphereGeometry args={[0.055, 12, 12]} />
+        <meshStandardMaterial color={TOP} roughness={0.7} />
+      </mesh>
+      {/* pink shirt torso */}
       <mesh position={[0, 1.32, 0]} castShadow>
         <capsuleGeometry args={[0.17, 0.22, 6, 16]} />
-        <meshStandardMaterial color={DRESS} roughness={0.75} />
+        <meshStandardMaterial color={TOP} roughness={0.7} />
+      </mesh>
+      {/* brown crossbody bag: strap + bag on the hip */}
+      <mesh position={[0, 1.3, 0]} rotation={[0.06, 0, 0.85]}>
+        <torusGeometry args={[0.2, 0.014, 8, 28]} />
+        <meshPhysicalMaterial color="#6f4122" roughness={0.4} clearcoat={0.4} />
+      </mesh>
+      <mesh position={[-0.21, 0.98, 0.14]} rotation={[0, 0.35, 0]} castShadow>
+        <boxGeometry args={[0.16, 0.18, 0.07]} />
+        <meshPhysicalMaterial color="#7a4a26" roughness={0.35} clearcoat={0.6} />
       </mesh>
       {/* neck */}
       <mesh position={[0, 1.5, 0]}>
@@ -208,8 +219,8 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
           <sphereGeometry args={[0.3, 32, 32, 0, Math.PI * 2, 0, Math.PI * 0.62]} />
           <meshStandardMaterial color={HAIR} roughness={0.45} />
         </mesh>
-        {/* long hair falling behind the shoulders */}
-        <mesh position={[0, -0.18, -0.17]} scale={[1, 1.7, 0.7]} castShadow>
+        {/* long open hair falling down the back */}
+        <mesh position={[0, -0.3, -0.15]} scale={[1.05, 2.3, 0.75]} castShadow>
           <sphereGeometry args={[0.24, 20, 20]} />
           <meshStandardMaterial color={HAIR} roughness={0.45} />
         </mesh>
@@ -224,10 +235,16 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
             <meshStandardMaterial color={HAIR} roughness={0.45} />
           </mesh>
         ))}
-        {/* space buns */}
-        {[-0.26, 0.26].map((x) => (
-          <mesh key={x} position={[x, 0.28, -0.02]} castShadow>
-            <sphereGeometry args={[0.12, 18, 18]} />
+        {/* wavy locks falling over the shoulders */}
+        {[-0.25, 0.25].map((x) => (
+          <mesh
+            key={x}
+            position={[x, -0.28, 0.03]}
+            rotation={[0, 0, x > 0 ? -0.15 : 0.15]}
+            scale={[0.45, 2, 0.5]}
+            castShadow
+          >
+            <sphereGeometry args={[0.13, 14, 14]} />
             <meshStandardMaterial color={HAIR} roughness={0.45} />
           </mesh>
         ))}
@@ -258,7 +275,7 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
         {/* nose + smile + blush */}
         <mesh position={[0, -0.04, 0.3]} scale={[1, 1.2, 0.7]}>
           <sphereGeometry args={[0.022, 10, 10]} />
-          <meshStandardMaterial color="#e6a97e" roughness={0.6} />
+          <meshStandardMaterial color="#96562f" roughness={0.6} />
         </mesh>
         {/* big open smile: dark mouth + rosy lower lip */}
         <group position={[0, -0.1, 0.296]} rotation={[0.3, 0, 0]}>
@@ -278,7 +295,7 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
         {[-0.18, 0.18].map((x) => (
           <mesh key={x} position={[x, -0.06, 0.24]} scale={[1, 0.7, 0.4]}>
             <sphereGeometry args={[0.05, 10, 10]} />
-            <meshStandardMaterial color="#f4a3a3" roughness={0.8} transparent opacity={0.7} />
+            <meshStandardMaterial color="#c96f57" roughness={0.8} transparent opacity={0.55} />
           </mesh>
         ))}
       </group>
@@ -286,12 +303,12 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
       <group position={[-0.22, 1.42, 0]} rotation={[0.15, 0, 0.55]}>
         <mesh position={[0, -0.19, 0]} castShadow>
           <capsuleGeometry args={[0.05, 0.28, 4, 12]} />
-          <meshStandardMaterial color={SKIN} roughness={0.6} />
+          <meshStandardMaterial color={TOP} roughness={0.7} />
         </mesh>
         <group position={[0, -0.38, 0]} rotation={[-0.6, 0, -0.2]}>
           <mesh position={[0, -0.16, 0]} castShadow>
             <capsuleGeometry args={[0.045, 0.24, 4, 12]} />
-            <meshStandardMaterial color={SKIN} roughness={0.6} />
+            <meshStandardMaterial color={TOP} roughness={0.7} />
           </mesh>
           <mesh position={[0, -0.32, 0]}>
             <sphereGeometry args={[0.06, 12, 12]} />
@@ -303,12 +320,12 @@ function Girl({ shoulderRef, elbowRef, girlRef }) {
       <group ref={shoulderRef} position={[0.22, 1.42, 0.04]} rotation={[-0.35, 0, -0.3]}>
         <mesh position={[0, -0.19, 0]} castShadow>
           <capsuleGeometry args={[0.05, 0.28, 4, 12]} />
-          <meshStandardMaterial color={SKIN} roughness={0.6} />
+          <meshStandardMaterial color={TOP} roughness={0.7} />
         </mesh>
         <group ref={elbowRef} position={[0, -0.38, 0]} rotation={[-0.6, 0, 0]}>
           <mesh position={[0, -0.16, 0]} castShadow>
             <capsuleGeometry args={[0.045, 0.24, 4, 12]} />
-            <meshStandardMaterial color={SKIN} roughness={0.6} />
+            <meshStandardMaterial color={TOP} roughness={0.7} />
           </mesh>
           {/* hand */}
           <mesh position={[0, -0.33, 0]} castShadow>
