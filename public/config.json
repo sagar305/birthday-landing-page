@@ -86,14 +86,250 @@
       "id": "timeline",
       "type": "timeline",
       "title": "Our Journey Through Time",
-      "subtitle": "A little walk down memory lane...",
+      "subtitle": "A little walk down memory lane..."
       "items": [
-        { "date": "March 2019", "image": "https://picsum.photos/id/1005/500/400", "caption": "The day we first met — and I knew you were special.", "skipPercent": 0 },
-        { "date": "July 2021", "image": "https://picsum.photos/id/1003/500/400", "caption": "Our first big trip together. Best decision ever." },
-        { "date": "December 2022", "image": "https://picsum.photos/id/1024/500/400", "caption": "Celebrating every little win, side by side." },
-        { "date": "October 2023", "image": "https://picsum.photos/id/1011/500/400", "caption": "A surprise weekend getaway you still talk about." },
-        { "date": "February 2025", "image": "https://picsum.photos/id/1035/500/400", "caption": "Still laughing, still us — just getting started." }
-      ]
+  {
+    "date": "March 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491847/IMG-20250303-WA0040_rxzqa6.jpg",
+    "caption": "Our first Moment of celebration and togetherness."
+    "skipPercent": 0
+  },
+  {
+    "date": "March 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491852/IMG20250315211720_e4qzou.jpg",
+    "caption": "First meet after that big moment."
+  },
+  {
+    "date": "April 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491852/IMG20250420174325_sht5u2.jpg",
+    "caption": "First Solo meet, or can we call it a first date?"
+  },
+  {
+    "date": "April 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491854/IMG20250427201506_wai7oh.jpg",
+    "caption": "Here first solo meeta at Sasural?"
+  },
+  {
+    "date": "April 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491854/IMG20250427173419_rpkbw1.jpg",
+    "caption": "No, I think its better to say it, our pre-marriage shoot."
+  },
+  {
+    "date": "18th May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491847/IMG-20250520-WA0178_pkmtig.jpg",
+    "caption": "So, Finally the day arrived, and we are ready to take the next step in our journey of togetherness."
+  },
+  {
+    "date": "May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784459199/IMG20250524201913_xw89ge.jpg",
+    "caption": "So First outing, Yeah its family outing."
+  },
+  {
+    "date": "May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491848/IMG-20250525-WA0062_unzqui.jpg",
+    "caption": "So, now we are in the first family celebration, it's Nanad's birthday."
+  },
+  {
+    "date": "May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491868/IMG20250526104420_xlxott.jpg",
+    "caption": "I forgot the name of this festival, but this is our first festival together."
+  },
+  {
+    "date": "May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491856/IMG20250527050133_ishfpf.jpg",
+    "caption": "So first Flight together, and this is our first flight selfie."
+  },
+  {
+    "date": "May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491856/IMG20250527153607_xybvig.jpg",
+    "caption": "Here Honeymoon begins, oops we can call it our first trip also."
+  },
+  {
+    "date": "May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491857/IMG20250528141455_fnrlig.jpg",
+    "caption": "Ohh its first ferry, Excited alot."
+  },
+  {
+    "date": "May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491839/1748795267728_ir5kok.jpg",
+    "caption": "So, here first date in trip."
+  },
+  {
+    "date": "May 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783492836/IMG20250530165520_s0l5lr.jpg",
+    "caption": "So, can you guess name of this place"
+  },
+  {
+    "date": "June 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784460255/IMG20250605005033_1_nn12xe.jpg",
+    "caption": "So, we reach to my bday celebration, and this is our first birthday celebration together."
+  },
+  {
+    "date": "June 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491849/IMG-20250607-WA0022_ri3vh6.jpg",
+    "caption": "here you are expereincing your peak creative pati moment."
+  },
+  {
+    "date": "June 2025",
+    "image": "hhttps://res.cloudinary.com/duoia8rhc/image/upload/v1783491865/IMG20250618212902_dhx6uh.jpg",
+    "caption": "can you guess where we are and why this is special?."
+  },
+  {
+    "date": "June 2025",
+    "image": "hhttps://res.cloudinary.com/duoia8rhc/image/upload/v1783491865/IMG20250618212902_dhx6uh.jpg",
+    "caption": "can you guess where we are and why this is special?."
+  },
+  {
+    "date": "July 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491862/IMG20250705190444_s0in4z.jpg",
+    "caption": "here our outing more than a movie, what we did this day do u remember?"
+  },
+  {
+    "date": "July 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491862/IMG20250705190444_s0in4z.jpg",
+    "caption": "here our outing more than a movie, what we did this day do u remember?"
+  },
+  {
+    "date": "July 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491849/IMG-20250713-WA0001_l88jfy.jpg",
+    "caption": "So, we reached to our first nautni"
+  },
+  {
+    "date": "July 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491865/IMG20250720164306_td9wnj.jpg",
+    "caption": "Now, its time to celbaration again, its your bday celebration, and this is our first birthday celebration together."
+  },
+  {
+    "date": "Sept 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491864/IMG20250928202830_zlbbt3.jpg",
+    "caption": "its so long, now we are in festival season, and this is our first navratri together."
+  },
+  {
+    "date": "Oct 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491867/IMG20251003214715_udskub.jpg",
+    "caption": "Again we are in celebration mode, guess the reason?"
+  },
+  {
+    "date": "Oct 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491849/IMG-20251010-WA0141_zzgunm.jpg",
+    "caption": "hey, its karwa chauth, and this is our first karwa chauth together. Chand bahut late aaya tha yaar"
+  },
+  {
+    "date": "Oct 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491867/IMG20251020212416_pzoh1n.jpg",
+    "caption": "Yes, you are right, its first diwali together, and this is our first diwali celebration together."
+  },
+  {
+    "date": "Nov 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491872/IMG20251102233836_c8srku.jpg",
+    "caption": "its sasural first family function, and this is our first family function together."
+  },
+  {
+    "date": "Nov 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491873/IMG20251123155416_jsbk4s.jpg",
+    "caption": "Its choti ganga kinare, no kididng, but moment h bhai."
+  },
+  {
+    "date": "Dec 2025",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491850/IMG-20251217-WA0008_dip8xl.jpg",
+    "caption": "Its mayke ka first function together."
+  },
+  {
+    "date": "Jan 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784461674/IMG20260201215505_vpegbg.jpg",
+    "caption": "Its new year(not first jan I know), It new year selfi together."
+  },
+  {
+    "date": "Feb 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491850/IMG-20260208-WA0057_n3jfiy.jpg",
+    "caption": "aa gye, divyansh ki shaadi m."
+  },
+  {
+    "date": "Feb 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491850/IMG-20260208-WA0041_kmt4sc.jpg",
+    "caption": "Aree abhi bhi wahi h."
+  },
+  {
+    "date": "Feb 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491850/IMG-20260208-WA0041_kmt4sc.jpg",
+    "caption": "Aree abhi bhi wahi h."
+  },
+  {
+    "date": "Feb 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783492835/IMG20260208174859_ok1iiw.jpg",
+    "caption": "Aree abhi bhi wahi h. ye to aani hi thi"
+  },
+  {
+    "date": "Feb 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491880/IMG20260214223545_az2pns.jpg",
+    "caption": "Ye bhuli to nhi, ye hai apne valentine day ka first celebration together."
+  },
+  {
+    "date": "March 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784461943/IMG20260305083817_yh6jez.jpg",
+    "caption": "Its time to celbrate colour in our life."
+  },
+  {
+    "date": "Apr 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462113/IMG20260405182223_drzuaa.jpg",
+    "caption": "Ye h mele wali selfi."
+  },
+  {
+    "date": "Apr 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462113/IMG20260405182223_drzuaa.jpg",
+    "caption": "Ab m thak gya, isse kya bolu barbique wali selfi?"
+  },
+  {
+    "date": "May 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462340/IMG_0115_xbd66s_c4h7lh.png",
+    "caption": "1 Year about to complete, and this is our first anniversary celebration together."
+  },
+  {
+    "date": "May 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462340/IMG_0115_xbd66s_c4h7lh.png",
+    "caption": "1 Year about to complete, and this is our first anniversary celebration together."
+  },
+  {
+    "date": "May 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462344/IMG_1036_xfgv27_bnmuri.png",
+    "caption": "Ohh yeah, this is our first forign trip also its thailand."
+  },
+  {
+    "date": "18th May 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462341/IMG_0825_tq877z_wsyaer.png",
+    "caption": "Day arrived it anniversary, Happy Anniversay again biwi."
+  },
+  {
+    "date": "May 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462343/IMG_1209_tkmiaz_w9aind.png",
+    "caption": "thak gye hoge scroll krte krte paani peelo."
+  },
+  {
+    "date": "May 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462343/IMG_1209_tkmiaz_w9aind.png",
+    "caption": "thak gye hoge scroll krte krte paani peelo."
+  },
+  {
+    "date": "May 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462346/IMG_1266_q41kkq_sbtvna.png",
+    "caption": "Chuna laga diya city walk mall k naam pr."
+  },
+  {
+    "date": "June 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462753/IMG_1374_x77lq1_1_zfhkdl.png",
+    "caption": "how cutely you did all this hard work to make this gift thankyou again."
+  },
+  {
+    "date": "June 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784462345/IMG_1440_wqsjxn_h5ot6b.png",
+    "caption": "This is last we celbrated together till now, more moments are ready to come."
+  },
+  {
+    "date": "July 2026",
+    "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1784457430/samples/waves.png",
+    "caption": "will add together more memory and add in this to scroll infinite."
+  }
+]
     },
     {
       "id": "puzzle",
