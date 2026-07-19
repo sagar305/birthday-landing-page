@@ -11,7 +11,7 @@
     "background": "linear-gradient(135deg, #fff1f2 0%, #fdf2ff 45%, #eef2ff 100%)"
   },
   "countdown": {
-    "enabled": true,
+    "enabled": false,
     "target": "2026-07-20T00:00:00+05:30",
     "emoji": "🎂",
     "title": "Something magical unlocks in...",
