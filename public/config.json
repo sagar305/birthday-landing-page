@@ -11,7 +11,7 @@
     "background": "linear-gradient(135deg, #fff1f2 0%, #fdf2ff 45%, #eef2ff 100%)"
   },
   "countdown": {
-    "enabled": false,
+    "enabled": true,
     "target": "2026-07-20T00:00:00+05:30",
     "emoji": "🎂",
     "title": "Something magical unlocks in...",
@@ -337,7 +337,7 @@
       "type": "message",
       "title": "A Little Note For You",
       "signature": "With all my love, Sagar 💌",
-      "body": "Dear Riya,\n\nOn this special day, I just want you to know how much you mean to me. Every moment with you feels like a gift, and watching you grow, smile, and shine inspires me every single day.\n\nMay this new year of your life be filled with laughter, adventure, and all the love you so freely give to others — finally coming back to you.\n\nHappy Birthday, beautiful. Here's to many more memories together."
+      "body": "Dear Biwi,\n\nOn this special day, I just want you to know how much you mean to me. Every moment with you feels like a gift, and watching you grow, smile, and shine inspires me every single day.\n\nMay this new year of your life be filled with laughter, adventure, and all the love you so freely give to others — finally coming back to you.\n\nHappy Birthday, beautiful. Here's to many more memories together."
     },
     {
       "id": "wishes",
