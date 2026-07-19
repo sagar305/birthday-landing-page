@@ -167,7 +167,8 @@
   {
     "date": "June 2025",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491849/IMG-20250607-WA0022_ri3vh6.jpg",
-    "caption": "here you are expereincing your peak creative pati moment."
+    "caption": "here you are experiencing your peak creative pati moment."
+    "skipPercent": 25
   },
   {
     "date": "June 2025",
@@ -193,6 +194,7 @@
     "date": "Sept 2025",
     "image": "https://res.cloudinary.com/duoia8rhc/image/upload/v1783491864/IMG20250928202830_zlbbt3.jpg",
     "caption": "its so long, now we are in festival season, and this is our first navratri together."
+    "skipPercent": 25
   },
   {
     "date": "Oct 2025",
